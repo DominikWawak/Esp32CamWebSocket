@@ -5,8 +5,7 @@ const url = require('url');
 
 const WebSocket = require('ws');
 
-const port = 3003;
-
+const port = process.env.PORT;
 const express_config= require('./config/express.js');
 
 express_config.init(app);
